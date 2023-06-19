@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="$(document.body).css('opacity',1)">
+    <header>
+        <nav>
+            <a href="http://github.com/onlypatric">GitHub</a>
+            <a href="#about">About</a>
+            <a href="#work1">Work</a>
+        </nav>
+        <div class="intro">
+            <div class="main-title-section">
+                <h1>Nome Cognome</h1>
+                <p>Hello there! My name is <strong>Pintescul Patric</strong>, and I'm a passionate <strong>developer</strong> with a diverse range of
+                    skills and experiences. <br><br>
+                    With over <strong>3 years of experience in C/C++, 7 years in Python 3, 5 years in JavaScript and jQuery, 3
+                    years in React,
+                    Angular, Vue.js, Svelte, and Next.js, and 2 years in Java and 1 year in Kotlin</strong>, I have a solid
+                    foundation in various
+                    programming languages and technologies. <br> While I excel in backend development, I'm equally
+                    comfortable working on
+                    frontend projects.</p>
+            </div>
+            <img src="P-removebg-preview.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="element about inview-action" id="about">
+            <div class="text">
+                <h4>About me</h4>
+                <p><span>My expertise lies in crafting robust and efficient backend systems <strong>using Python, JavaScript,
+                Java, and C</strong>. I've honed
+                        my skills in <strong>AI development</strong> and have contributed to several <strong>automation software projects</strong>,
+                        including <strong>InstaManager, a
+                        powerful tool for managing Instagram accounts, and AutoRedditor, an AI-powered automatic Reddit
+                        scraper</strong>. In addition
+                        to my professional work, I've made notable contributions to the software community. I'm proud to
+                        have been part of
+                        the <strong>Ubuntu 23.04 release</strong> and have contributed to various <strong>open-source Google libraries</strong>.</span>
+                    <br><br>
+                    <span>With a <strong>strong background in development</strong>, a keen eye for detail, and a drive for continuous
+                        improvement, I am
+                        <strong>committed to delivering exceptional software solutions</strong>. I thrive on challenges and embrace new
+                        technologies to push
+                        the boundaries of what can be achieved. If you're looking for a dedicated developer with a
+                        diverse skill set, <strong>I
+                        would love to collaborate on your next project.</strong></span>
+                </p>
+            </div>
+        </div>
+        <div class="element experience inview-action" id="experience">
+            <div class="text">
+                <h4>My experience</h4>
+                <ul>
+                    <li>3 years of <strong>C/C++</strong></li>
+                    <li>7 years of <strong>Python3</strong></li>
+                    <li>5 years of <strong>Javascript</strong></li>
+                    <li>3 years of <strong>ReactJS</strong></li>
+                    <li>3 years of <strong>Angular</strong></li>
+                    <li>3 years of <strong>Vue.js</strong></li>
+                    <li>3 years of <strong>NextS.js</strong></li>
+                    <li>3 years of <strong>Svelte</strong></li>
+                    <li>5 years of <strong>JQuery</strong></li>
+                    <li>2 years of <strong>Java</strong></li>
+                    <li>1 year of <strong>Kotlin</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="element about projects inview-action" id="work1" style="margin-top:0;">
+            <div class="text">
+                <h4>My main projects</h4>
+                <div class="projects-inner">
+                    <div class="project-card" id="experience">
+                        <h5 class="project-title">IPG</h5>
+                        <p class="project-description">
+                            A C++ AI for image generation and detection. Efficient and versatile, it enhances computer
+                            vision and graphics with
+                            fast processing. Enables real-time applications in gaming, AR, robotics, and more.
+                            Leveraging advanced algorithms and
+                            deep learning, IGP delivers powerful image manipulation and accurate object detection.
+                        </p>
+                    </div>
+                    <div class="project-card" id="experience">
+                        <h5 class="project-title">InstaManager</h5>
+                        <p class="project-description">
+                            A robust software designed to automate multiple Instagram accounts, enabling seamless
+                            execution of various actions.
+                            Effortlessly manage and scale your Instagram presence with ease. From posting, liking, and
+                            commenting to following and
+                            unfollowing, InstaManager empowers you to streamline your Instagram activities and boost
+                            engagement. Unlock the
+                            potential of automation and maximize your Instagram growth with InstaManager.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="element about projects inview-action" id="work2" style="margin-top:0;">
+            <div class="text">
+                <h4>My secondary projects</h4>
+                <div class="projects-inner">
+                    <div class="project-card" id="experience">
+                        <h5 class="project-title">ReactKit</h5>
+                        <p class="project-description">
+                            A lightweight JavaScript library designed for effortlessly creating simple and elegant user
+                            interfaces with React.
+                            Simplify your UI development process and achieve seamless integration with ReactKit's
+                            intuitive API and comprehensive
+                            component library. Boost productivity and build stunning UIs with ease.
+                        </p>
+                    </div>
+                    <div class="project-card" id="experience">
+                        <h5 class="project-title">TToolkit</h5>
+                        <p class="project-description">
+                            An advanced text manipulation toolkit. Detect text content, sentiments, emotions, and more.
+                            Empower your applications
+                            with powerful text analysis capabilities. Streamline text processing tasks with ease and
+                            unlock valuable insights from
+                            textual data. Boost your text-based applications with TToolKit's comprehensive features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="text">
+            <h4>Contact me</h4>
+            <form action="https://formspree.io/f/xvonedbd" method="POST" class="contact">
+                <input type="text" name="name" placeholder="Name" id="">
+                <input type="text" name="subject" placeholder="Subject" id="">
+                <input type="email" name="email" placeholder="email@mail.com" id="">
+                <label class="message-content" for="content">Message</label>
+                <textarea name="content" id="textarea-email-form" cols="30" rows="10"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="extra">
+            <p>Copyright (2023) Pintescul Patric</p>
+            <a href="mailto:patric.personal99@gmail.com">patric.personal99@gmail.com</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-theme: #ffffff;
+    --main-color: #272727;
+}
+
+nav{
+    width: 100%;
+    position: sticky;
+    gap: 1rem;
+    top:0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav a{
+    font-family: "Poppins";
+    font-weight: bolder;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.2rem;
+    color:var(--main-color);
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+    opacity: 0;
+    transition: opacity .3s linear;
+    background: radial-gradient(ellipse at bottom left, #fbb3b3 0%, transparent 70%),
+        radial-gradient(ellipse at top right, #c7f7c9 0%, transparent 70%),
+        radial-gradient(ellipse at top right, #b5e2e8 0%, transparent 70%),
+        radial-gradient(ellipse at bottom left, #e1a3e1 0%, transparent 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 10vw
+}
+
+div.intro h1 {
+    font-family: "Poppins";
+    position: relative;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    /* Adjust this value to control the distance between the rectangle and text */
+}
+
+div.intro h1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    /* Adjust this value to control the width of the rectangle */
+    height: 7.5px;
+    /* Adjust this value to control the height of the rectangle */
+    background-color: rgb(169, 54, 28);
+}
+
+div.intro p {
+    font-size: 1.2rem;
+    font-family: "Arial";
+    padding: 20px;
+    border-left: 2px solid gray;
+}
+
+div.intro img {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+div.main-title-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (width > 640px) {
+    div.intro {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+main {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--bg-theme);
+    box-shadow: 0px 0px 100px 100px var(--bg-theme);
+    padding: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+    align-content: center;
+}
+
+div.element {
+    margin: auto;
+    max-width: 350px;
+    color: var(--main-color);
+    transition: all .5s linear;
+    opacity: 0;
+}
+
+div.element h4 {
+    font-family: "Poppins";
+    position: relative;
+    font-style: italic;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+div.element h4:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    /* Adjust this value to control the width of the rectangle */
+    height: 5px;
+    /* Adjust this value to control the height of the rectangle */
+    background-color: rgb(169, 54, 28);
+}
+
+div.element p {
+    font-family: "Arial";
+    padding: 20px;
+    border-left: 2px solid gray;
+    font-size: 1rem;
+}
+
+div.experience {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.experience div.text {
+    height: 100%;
+}
+
+div.experience ul {
+    font-family: "Arial";
+    font-size: 1rem;
+    border-left: 2px solid gray;
+}
+
+footer {
+    min-height: 200px;
+    padding: 10vw;
+}
+
+footer h4 {
+    font-family: "Poppins";
+    position: relative;
+    font-style: italic;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+footer h4:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    /* Adjust this value to control the width of the rectangle */
+    height: 5px;
+    /* Adjust this value to control the height of the rectangle */
+    background-color: rgb(169, 54, 28);
+}
+
+footer form.contact {
+    font-family: "Arial";
+    padding: 20px;
+    border-left: 2px solid gray;
+    font-size: 1rem;
+}
+
+footer form.contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about{
+    transition: all 1s ease;
+}
+.animated-transition-left-to-right{
+    animation: slide-in 1s forwards;
+}
+.animated-transition-right-to-left {
+    animation: slide-in-right 1s forwards;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+footer form.contact input {
+    width: 30vw;
+    min-width: 200px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2.5px;
+    border: 0;
+    font-size: 15px;
+    font-family: "Poppins";
+    color: var(--main-color);
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+}
+
+footer form.contact textarea {
+    width: 30vw;
+    min-width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2.5px;
+    border: 0;
+    font-size: 15px;
+    font-family: "Poppins";
+    resize: none;
+    color: var(--main-color);
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+label.message-content{
+width: 30vw;
+    min-width: 200px;
+    border-top: 1px solid #000;
+    margin: 10px;
+    padding: 5px;
+    font-family: "Poppins";
+}
+form.contact button[type="submit"]{
+    width: 30vw;
+        min-width: 200px;
+        margin: 15px;
+        color:#fff;
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 1.2rem;
+        border: 0;
+        outline: none;
+        border-radius: 10px;
+    background-image: linear-gradient(to right top, #051937, #3a5777);
+    padding: 15px;
+}
+div.element.projects{
+    width: 100%;
+}
+.projects .text .projects-inner{
+    border-left: 2px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.project-card{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 50px 42px rgba(0, 0, 0, 0.1);
+    background-color: #051937;
+    color:#fff;
+}
+.project-card .project-title{
+    margin: 0;
+    padding: 0;
+    font-size:1rem;
+    font-family: "Poppins";
+    border-bottom: 1px solid #000;
+}
+div.extra{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap:1rem;
+}
+div.extra a, div.extra p{
+    font-family: "Poppins";
+    font-size: .85rem;
+    font-weight: 300;
+    padding: 0;margin: 0;
+    font-style: italic;
+    color:rgb(21, 21, 21);
+    text-decoration: none;
+}
